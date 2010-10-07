@@ -49,6 +49,8 @@ class Boot {
       // the Dish Type management menu items
       Menu(Loc("Dish Types", List("dishtype", "list"), "Dish Types")) ::
       Menu(Loc("Add Dish Types", List("dishtype", "add"), "Add Dish Type")) ::
+      // the Dish management menu items
+      Dish.menus :::
       // the User management menu items
       User.sitemap
 
