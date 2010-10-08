@@ -1,0 +1,18 @@
+<lift:surround with="default" at="content">
+  <head><title><lift:loc>Dish Types</lift:loc></title></head>
+
+  <h2>Dish Types</h2>
+  <table>
+    <tr>
+      <th><lift:loc>Name</lift:loc></th>
+      <th></th>
+    </tr>
+  <lift:DishTypeOps.list>
+    <tr>
+      <td><dishType:name /></td>
+      <td><dishType:edit />&nbsp;<dishType:delete /></td>
+    </tr>
+  </lift:DishTypeOps.list>
+  <a href="add"><lift:loc>Add Dish Type</lift:loc></a>
+  </table>
+</lift:surround>

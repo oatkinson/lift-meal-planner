@@ -45,7 +45,10 @@ class Boot {
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"),
-         "Static Content"))) :::
+	       "Static Content"))) :::
+      // the Dish Type management menu items
+      Menu(Loc("Dish Types", List("dishtype", "list"), "Dish Types")) ::
+      Menu(Loc("Add Dish Types", List("dishtype", "add"), "Add Dish Type")) ::
       // the User management menu items
       User.sitemap
 

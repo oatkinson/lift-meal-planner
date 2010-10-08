@@ -1,0 +1,9 @@
+<lift:surround with="default" at="content">
+  <head><title><lift:loc>Add Dish Type</lift:loc></title></head>
+
+  <h2>Add Dish Type</h2>
+  <lift:DishTypeOps.add form="post">
+    Name: <dishType:name />
+    <dishType:submit />
+  </lift:DishTypeOps.add>
+</lift:surround>
