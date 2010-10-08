@@ -73,6 +73,12 @@ class Boot {
     // What is the function to test if a user is logged in?
     LiftRules.loggedInTest = Full(() => User.loggedIn_?)
 
+    // Added for OpenID support
+    LiftRules.dispatch.append(code.model.MyVendor.dispatchPF)
+    LiftRules.snippets.append(code.model.MyVendor.snippetPF)
+
+
+
     // Make a transaction span the whole HTTP request
     S.addAround(DB.buildLoanWrapper)
   }
