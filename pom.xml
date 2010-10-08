@@ -30,6 +30,11 @@
             <version>2.8.0</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.scala_libs</groupId>
+            <artifactId>lift-gae-jdo_2.8.0</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
     <repositories>
         <repository>

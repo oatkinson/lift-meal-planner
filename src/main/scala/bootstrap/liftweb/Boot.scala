@@ -51,6 +51,7 @@ class Boot {
       Menu(Loc("Add Dish Types", List("dishtype", "add"), "Add Dish Type")) ::
       // the Dish management menu items
       Dish.menus :::
+      Meal.menus :::
       // the User management menu items
       User.sitemap
 
