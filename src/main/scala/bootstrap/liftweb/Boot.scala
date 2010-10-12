@@ -11,7 +11,7 @@ import Loc._
 import mapper._
 
 import code.model._
-
+import code.api._
 
 /**
  * A class that's instantiated early and run.  It allows the application
@@ -55,6 +55,9 @@ class Boot {
       // the User management menu items
       User.sitemap
 
+    // add api dispatching
+    LiftRules.dispatch.prepend(DispatchRestAPI.dispatch)
+    
     // set the sitemap.  Note if you don't want access control for
     // each page, just comment this line out.
     LiftRules.setSiteMap(SiteMap(entries:_*))
